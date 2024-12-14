@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone App</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img alt="Spotify Logo" height="40" src="https://storage.googleapis.com/a1aa/image/2lvow7JtVZpNC5LB9a9D6taZfMtYfhIBiF1yHaHN3EGIFJ5TA.jpg"  width="40"/>
+                <img src="home.svg" alt="" height="25" >
+            </div>
+            <div class="search-bar">
+                
+                <i class='fas fa-search'>                    
+                </i>
+                <input placeholder="What do you want to play?" type="text"/>
+            </div>
+            <div class="auth-buttons">
+                <button>Sign up</button>
+                <button class="login">Login</button>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="left">
+                
+                    <div class="library">
+                     <i class="fas fa-book">
+                     </i>
+                     <span>
+                      Your Library
+                     </span>
+                    </div>
+                    <ol>
+                    
+                    
+                  </ol>
+
+                  </div>
+
+
+
+                  <div class="right">
+                    <div class="section">
+                     <h2>
+                      Popular artists
+                     </h2>
+                     <div class="items-1">
+                      <div class="item">
+                       <img alt="Artist 1" height="150" src="https://storage.googleapis.com/a1aa/image/zO8IWcixh9YIOtWfeIwF31arwuA5pN2YnDde0vIbTfYUUkkPB.jpg" width="150"/>
+                       <img src="play-button.png" alt="" class="play-button">
+                       <p>
+                        Pritam
+                       </p>
+                       <p>
+                        Artist
+                       </p>
+                      </div>
+                      <div class="item">
+                       <img alt="Artist 2" height="150" src="https://storage.googleapis.com/a1aa/image/1HvP0EcNAaZTL9hwvGe4wEWzscHfZcARS6B25YbGoaKLFJ5TA.jpg" width="150"/>
+                       <img src="play-button.png" alt="" class="play-button">
+                       <p>
+                        Sachin-Jigar
+                       </p>
+                       <p>
+                        Artist
+                       </p>
+                      </div>
+                      <div class="item">
+                       <img alt="Artist 3" height="150" src="https://storage.googleapis.com/a1aa/image/asLeKrMGfVv89EMbroMepRBXbfPTW3wW53MjGRueRDBxoIJfE.jpg" width="150"/>
+                       <img src="play-button.png" alt="" class="play-button">
+                       <p>
+                        A.R. Rahman
+                       </p>
+                       <p>
+                        Artist
+                       </p>
+                      </div>
+                      <div class="item">
+                       <img alt="Artist 4" height="150" src="https://storage.googleapis.com/a1aa/image/tlURXFK5zr41DJfwLmywgmRWAqqtuW2H6F8VW9k3mZlkik8JA.jpg" width="150"/>
+                       <img src="play-button.png" alt="" class="play-button">
+                       <p>
+                        Arijit Singh
+                       </p>
+                       <p>
+                        Artist
+                       </p>
+                      </div>
+                      <div class="item">
+                       <img alt="Artist 5" height="150" src="https://storage.googleapis.com/a1aa/image/wyGfFaaKgM2KBilw2Qeghpl1RYSf2RvTPRexZE6I2s38TkkPB.jpg" width="150"/>
+                       <img src="play-button.png" alt="" class="play-button">
+                       <p>
+                        Vishal-Shekhar
+                       </p>
+                       <p>
+                        Artist
+                       </p>
+                      </div>
+                      <div class="item">
+                       <img alt="Artist 6" height="150" src="https://storage.googleapis.com/a1aa/image/VY7tP1ZmKmrxBpON40KNZRLKqnlhbiYOeYIa8faBxKENFJ5TA.jpg" width="150"/>
+                       <img src="play-button.png" alt="" class="play-button">
+                       <p>
+                        Atif Aslam
+                       </p>
+                       <p>
+                        Artist
+                       </p>
+                      </div>
+                     </div>
+                    </div>
+                    
+                   </div>                   
+            </div>
+            
+
+
+              
+              <div class="play-bar">
+                <!-- Song Info Section -->
+                <div class="song-info">
+                  <div class="song-title">Song_Title</div>
+                  <div class="artist-name">Artist_Name</div>
+                </div>
+              
+                <!-- Controls Section -->
+                <div class="controls">
+                  <button class="control-btn" id="previous-btn">
+                    <img src="previos.svg" alt="Previous">
+                  </button>
+                  <button class="control-btn" id="play-pause-btn">
+                    <img src="pause.svg" alt="Play/Pause">
+                  </button>
+                  <button class="control-btn" id="next-btn">
+                    <img src="next.svg" alt="Next">
+                  </button>
+                </div>
+              
+                <!-- Progress Section -->
+                <div class="progress-section">
+                  <span class="time-elapsed">0:00</span>
+                  <div class="progress-bar-container">
+                    <div class="progress-bar"></div>
+                  </div>
+                  <span class="time-remaining">3:30</span>
+                </div>
+              
+                <!-- Volume Section -->
+                <div class="volume-section">
+                  <button class="volume-btn" id="volume-btn">
+                    <img src="volume.svg" alt="Volume">
+                  </button>
+                  <div class="volume-bar-container">
+                    <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.5">
+                  </div>
+                  <button class="mute-btn" id="mute-btn">
+                    <img src="mute.svg" alt="Mute">
+                  </button>
+                </div>
+              </div>
+          
+              </div>
+              <script src="script.js"></script>
+             </body>
+             
+            </html>        
+</body>
+</html>
